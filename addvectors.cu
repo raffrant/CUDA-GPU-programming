@@ -60,7 +60,7 @@ int main() {
     
     for (int i = 0; i < n; i++) {
         if (i==0){
-          printf("C:%.2lf ", h_c[i]);   
+          printf("Result, C:%.2lf ", h_c[i]);   
         }else{
         printf("%.2lf ", h_c[i]);
 
