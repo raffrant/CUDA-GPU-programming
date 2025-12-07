@@ -1,7 +1,6 @@
 CUDA Linear Algebra in C++
 
 A lightweight, high-performance CUDA playground for core linear-algebra operations written in modern C++.
-This project is built for learning, experimentation, and extension—whether you're exploring GPU computing for the first time or optimizing math kernels for real scientific workloads.
 
 🚀 Features
 1. Vector Addition (GPU-Accelerated)
