@@ -41,7 +41,10 @@ Smaller problems still run correctly but may not outperform CPU versions—ideal
 🧱 Next Steps (Planned / Easy Extensions)
 
 Matrix–matrix multiplication (GEMM)
+
 QR decomposition on GPU
+
 Iterative solvers (power method, Lanczos)
+
 Visualization notebooks (Python ↔ CUDA bindings)
 
