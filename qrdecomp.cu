@@ -4,6 +4,7 @@
 #include <iomanip>
 #include <cmath>
 #include <random>
+#include <chrono>
 ///////////////////////////////////////////////////////////
 // Kernels: no atomicAdd, 1 block handles one column
 ///////////////////////////////////////////////////////////
@@ -155,6 +156,7 @@ int main() {
     }
     }
     std::vector<double> Q_col, R_row;
+    auto t0 = std::chrono::high_resolution_clock::now();
     qr_gram_schmidt_cuda(A_col, m, n, Q_col, R_row);
 
     auto print_col = [&](const char* name,
@@ -188,6 +190,8 @@ int main() {
     }
     print_col("Q", Q_col, m, n);   // columns = e1,e2,e3
     print_row("R", R_row, n, n);   // upper triangular
-
+    auto t1 = std::chrono::high_resolution_clock::now();
+    double time = std::chrono::duration<double>(t1-t0).count();
+    printf("\nDone! Time: %.2fs\n", time);
     return 0;
 }
