@@ -6,8 +6,6 @@
 #include <random>
 #include <chrono>
 ///////////////////////////////////////////////////////////
-// Kernels: no atomicAdd, 1 block handles one column
-///////////////////////////////////////////////////////////
 
 __global__ void dot_block(const double* x, const double* y, int n, double* out) {
     extern __shared__ double sdata[];
