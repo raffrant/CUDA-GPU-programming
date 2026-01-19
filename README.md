@@ -19,6 +19,8 @@ Implements eigenvalue calculation for real symmetric matrices using CUDA-enabled
 Leverages well-structured GPU algorithms for symmetric matrices
 Demonstrates device-level performance for fundamental numerical linear algebra tasks
 
+3. QR decomposition on GPU
+Implement the QR decomposition and compare it with numpy's . 
 
 NVIDIA GPU with CUDA support
 
@@ -38,10 +40,6 @@ Repeated batch operations
 Smaller problems still run correctly but may not outperform CPU versions—ideal for educational purposes.
 
 🧱 Next Steps (Planned / Easy Extensions)
-
-Matrix–matrix multiplication (GEMM)
-
-QR decomposition on GPU
 
 Iterative solvers (power method, Lanczos)
 
