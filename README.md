@@ -20,6 +20,7 @@ Leverages well-structured GPU algorithms for symmetric matrices
 Demonstrates device-level performance for fundamental numerical linear algebra tasks
 
 3. QR decomposition on GPU
+   
 Implement the QR decomposition and compare it with numpy's . 
 
 NVIDIA GPU with CUDA support
