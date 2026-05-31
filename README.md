@@ -45,11 +45,11 @@ That makes it useful for performance engineering, hardware-aware ML, and energy-
 
 ```text
 .
-├── src/                # CUDA / C++ source code
-├── verilog/            # Verilog modules
+├── basic/                # CUDA / C++ source code
+├── verilogFPGA/            # Verilog modules
 ├── wave.vcd            # Simulation waveform
 ├── cudaenergy.py       # VCD parsing and plotting
-└── output/             # Generated plots and results
+└── output/             # Generated plots and results (Ongoing)
 ```
 
 ## Python analysis
