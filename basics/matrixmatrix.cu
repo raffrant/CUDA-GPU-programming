@@ -58,7 +58,7 @@ int main() {
     printf("Matrix C =\n");
     for(int i = 0; i < M; i++) {
         for(int j = 0; j < N; j++) 
-            printf("%6.6f ", h_C[i*M+j]);
+            printf("%6.6f ", h_C[i*N+j]);
         printf("\n");
     }    
     // Cleanup
