@@ -30,13 +30,13 @@ int main() {
     printf("Matrix A =\n");
     for(int i = 0; i < M; i++) {
         for(int j = 0; j < K; j++) 
-            printf("%6.6f ", h_A[i*M+j]);
+            printf("%6.6f ", h_A[i*K+j]);
         printf("\n");
     }
     printf("Matrix B =\n");
     for(int i = 0; i < K; i++) {
         for(int j = 0; j < N; j++) 
-            printf("%6.6f ", h_B[i*K+j]);
+            printf("%6.6f ", h_B[i*N+j]);
         printf("\n");
     }
     // GPU
